@@ -1,3 +1,5 @@
+sed -i 's/\/swap/#swap/g' /etc/fstab
+swapoff -a
 apt-get update
 wget https://github.com/containerd/containerd/releases/download/v1.6.2/containerd-1.6.2-linux-amd64.tar.gz
 sudo tar Czxvf /usr/local containerd-1.6.2-linux-amd64.tar.gz
